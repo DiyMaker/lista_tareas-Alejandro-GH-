@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="odoo14-custom-addons/.list">
+      <field name="name">odoo14-custom-addons/ list</field>
+      <field name="model">odoo14-custom-addons/.odoo14-custom-addons/</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="odoo14-custom-addons/.action_window">
+      <field name="name">odoo14-custom-addons/ window</field>
+      <field name="res_model">odoo14-custom-addons/.odoo14-custom-addons/</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="odoo14-custom-addons/.action_server">
+      <field name="name">odoo14-custom-addons/ server</field>
+      <field name="model_id" ref="model_odoo14-custom-addons/_odoo14-custom-addons/"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="odoo14-custom-addons/" id="odoo14-custom-addons/.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="odoo14-custom-addons/.menu_1" parent="odoo14-custom-addons/.menu_root"/>
+    <menuitem name="Menu 2" id="odoo14-custom-addons/.menu_2" parent="odoo14-custom-addons/.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="odoo14-custom-addons/.menu_1_list" parent="odoo14-custom-addons/.menu_1"
+              action="odoo14-custom-addons/.action_window"/>
+    <menuitem name="Server to list" id="odoo14-custom-addons/" parent="odoo14-custom-addons/.menu_2"
+              action="odoo14-custom-addons/.action_server"/>
+-->
+  </data>
+</odoo>
