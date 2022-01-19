@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_odoo14-custom-addons/_odoo14-custom-addons/,odoo14-custom-addons/.odoo14-custom-addons/,model_odoo14-custom-addons/_odoo14-custom-addons/,base.group_user,1,1,1,1
