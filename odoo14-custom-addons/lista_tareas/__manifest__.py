@@ -10,7 +10,7 @@
     """,
 
     'author': "Alejandro Gonzalez Hermoso",
-    'website': "https://apuntesfpinformatica.es",
+    'website': "https://github.com/DiyMaker/odooDevs.git",
     #Indicamos que es una aplicación
     'application': True,
 

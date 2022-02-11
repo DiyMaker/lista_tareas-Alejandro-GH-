@@ -8,10 +8,12 @@
       <field name="model">lista_tareas.lista_tareas</field>
       <field name="arch" type="xml">
         <tree>
+          <field name="avatar" widget="imagen" class="oe_avatar"/>
           <field name="tarea"/>
           <field name="prioridad"/>
           <field name="urgente"/>
           <field name="realizada"/>
+          <field name="fecha"/>
         </tree>
       </field>
     </record>
@@ -38,7 +40,10 @@
 
     <menuitem name="Links" id="lista_tareas.menu_1" parent="lista_tareas.menu_root"/>
     <menuitem name="Social" id="lista_tareas.menu_2" parent="lista_tareas.menu_root"/>
+    <menuitem name="Comunity" id="lista_tareas.menu_3" parent="lista_tareas.menu_root"/>
     <!-- actions -->
+    <menuitem name="Social" id="lista_tareas.menu_2_list" parent="lista_tareas.menu_2" action="lista_tareas.action_window"/>
+    <menuitem name="Comunity" id="lista_tareas.menu_3_list" parent="lista_tareas.menu_3" action="lista_tareas.action_window"/>
 
     <menuitem name="Mostrar lista" id="lista_tareas.menu_1_list" parent="lista_tareas.menu_1"
               action="lista_tareas.action_window"/>
